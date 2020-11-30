@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--  -->
+
+    <title>Javascript y jQuery</title>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <h1>Programando con jQuery</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>1. Uso de hide/show</p>
+                <div class="" id="dom_HideAndShowSimple">Me ocultaré y me mostraré</div>
+                    <br>
+                    <button type="button" class="btn btn-primary" id="btn_hideSimple">Ocultar</button>
+                    <button type="button" class="btn btn-primary" id="btn_showSimple">Mostrar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>2. Uso de hide/show con parámetros</p>
+                <div id="dom_hideAndShowWithParameters">Me ocultaré y mostraré</div>
+                    <br>
+                    <button type="button" class="btn btn-primary" id="btn_hideWithParameters">Ocultar</button>
+                    <button type="button" class="btn btn-primary" id="btn_showWithParameters">Mostrar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>3. Uso de toggle</p>
+                <div id="dom_toggleSimple">Me ocultaré y mostraré</div>
+                <button type="button" class="btn btn-primary" id="btn_toggleSimpleButton">Ocultar/Mostrar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>4. Uso de toggle con parámetros</p>
+                <div id="dom_toggleWithParameters">Me ocultaré y mostraré</div>
+                <button type="button" class="btn btn-primary" id="btn_toggleWithParameters">Ocultar/Mostrar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>5. Eventos con jQuery (click, dblclick, mouseenter,mouseleave)</p>
+                <table class="table table-bordered table-hover text-capitalize text-center">
+                    <tr>
+                        <td id="txt_simpleClick">click</td>
+                    </tr>
+                    <tr>
+                        <td id="txt_doubleClick">dblclick</td>
+                    </tr>
+                    <tr>
+                        <td id="txt_mouseEnter">mouseenter</td>
+                    </tr>
+                    <tr>
+                        <td id="txt_mouseLeave">mouseleave</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>6. Eventos con jQuery (keypress, keydown,keyup)</p>
+                <table class="table table-bordered table-hover text-capitalize text-center">
+                    <tr>
+                        <td>
+                            <div id="dom_keyPressUpdateTextColor">Cambia de color al introducir texto abajo</div>
+                            <input type="text" id="inputText_keyPressTextReference" value="" />
+                            <br>Keypress
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div id="keyDownUpdateTextColor">Cambia color al introducir texto abajo</div>
+                            <input type="text" id="keyDownTextReference" value="" />
+                            <br>Keydown
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div id="keyUpUpdateTextBgColor">Cambia color al introducir texto abajo</div>
+                            <input type="text" id="keyUpTextReference" value="" />
+                            <br>Keyup
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>7. Múltiples eventos (on)</p>
+                <div id="multipleEvents">Hola</div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>8. Uso de on (click, dblclick)</p>
+                <div id="clickAndDoubleClick">Este es un texto</div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>9. Creación de funciones (JS)</p>
+                <button type="button" class="btn btn-primary" id="creationOfFunctionsJS">Activar</button>
+            </div>
+        </div>        
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>10. Creación de funciones (jQuery)</p>
+                <button type="button" class="btn btn-primary cls0">Activar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>11. POO en jQuery</p>
+                <button type="button" class="btn btn-primary classJQuerySimple">Activar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>12. Uso de call() y apply()</p>
+                <button type="button" class="btn btn-primary classJQueryCallAndApply">Activar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>13. Uso de addClass</p>
+                <div id="classJQueryAddClass">Hola usuario</div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>14. Uso de hide().show()</p>
+                <div id="id18">
+                    <span id="id19">Presiona aquí</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>15. Manipular ids</p>
+                <div id="id20">Panel
+                    <span id="id21">Presiona aquí</span>
+                </div>
+                <button type="button" class="btn btn-primary" id="id22">Activar evento</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>16. Manipular ids</p>
+                <input type="text" id="id23" />
+                <input type="submit" id="id24" value="enviar" />
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>16. Manipular ids</p>
+                <button type="button" class="btn btn-primary" id="id25">Botón</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>17. Listas</p>
+                <ul>
+                    <li>Ceylon</li>
+                    <li>Groovy</li>
+                    <li>Scala</li>
+                </ul>
+                <ul>
+                    <li>Windows 10</li>
+                    <li>Linux</li>
+                    <li>Mac OS</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="id26">Activar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>18. Conversor soles a dólar</p>
+                Pesos: <input type="text" id="id27" value="">
+                <input type="submit" id="id28" value="Convertir a dólar">
+                <label id="id29"></label>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>19. Selectores even/odd</p>
+                <table class="table table-bordered">
+                    <tr>
+                        <td>Alma</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>Uriel</td>
+                        <td>33</td>
+                    </tr>
+                    <tr>
+                        <td>Camila</td>
+                        <td>5</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Daniel</td>
+                        <td>28</td>
+                    </tr>
+                </table>
+                <button type="button" class="btn btn-primary" id="id30">Activar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>20. Uso de text/html</p>
+                <p id="id31">El escéptico incipiente </p>
+                <p id="id32">El caso curioso del Dr. Heller</p><br/>
+                <button type="button" class="btn btn-primary" id="id33">Usar text</button>
+                <button type="button" class="btn btn-primary" id="id34">Usar html</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>21. Uso de with y height</p>
+                <div id="detalles"></div>
+                <div id="caja"></div>
+                <label id="id35">Mostrar dimensiones</label>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>22. Uso de attr</p>
+                <input id="id36" type="text" value="El extraño caso del Dr. Heller">
+                <div id="id37"></div>
+                <button type="button" class="btn btn-primary" id="id38">Activar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>23. Uso de addClass</p>
+                <p id="id39">Etiqueta 1</p>
+                <p id="id40">Etiqueta 2</p>
+                <p id="id41">Etiqueta 3</p>
+                <p id="id42">Etiqueta 4</p>
+                <button type="button" class="btn btn-primary" id="id43">Activar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>24. Uso de removeClass/removeAttr</p>
+                <p id="id44" class="cls6">Quitar clase</p>
+                <p id="id45" class="cls5">Quitar atributo</p>
+                <button type="button" class="btn btn-primary" id="id46">Remover clase y atributo</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="assets/js/jquery-3.5.1.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<!--  -->
+<script src="assets/js/main.js"></script>
+
+</html>
