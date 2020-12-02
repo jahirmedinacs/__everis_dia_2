@@ -1,5 +1,5 @@
 body {
-    background-color: #088A68;
+    background-color: #eeeeee;
     font-family: sans-serif;
     color: #000000;
 }
@@ -9,34 +9,34 @@ body {
     color: red;
 }
 
-.inselected {
+.deselected {
     background-color: #088A68;
     color: #EDEFEE;
 }
 
-#caja {
+#box {
     height: 125px;
     width: 200px;
     border: 1px solid red;
     background: purple;
 }
 
-.cls3 {
+.txtBlack-bgLime {
     color: black;
     background-color: lime;
 }
 
-.clas4 {
+.txtLime-bgBlack {
     color: lime;
     background-color: black;
 }
 
-.clas5 {
+.txtYellow-bgBlack {
     color: yellow;
     background-color: black;
 }
 
-.cls6 {
+.txtGray-bgBrown {
     color: gray;
     background-color: brown;
 }

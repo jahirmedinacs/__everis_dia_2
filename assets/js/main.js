@@ -1,5 +1,41 @@
 $(document).ready(function () {
 
+// Style per exampleParent //
+
+    let brPadding = "<hr>\n<hr>\n<br>\n<br>\n<br>\n";
+
+    let beforeExampleParentHTML = `
+    <hr>
+        <div class="row">
+            <div class="col-md-6 offset-md-3 border rounded bg-white">
+                <br>`;
+    let afterExampleParentHTML = `
+                <br>
+            <br>
+        </div>
+    </div>`;
+
+    $(".exampleParents").each(function () {
+            let firstPChild = $(this).children("p:first-child");
+
+            firstPChild.addClass("border rounded bg-light m-0")
+            firstPChild.css("text-align", "center")
+            firstPChild.after("<br>\n")
+
+            $(this).html( `
+                ${beforeExampleParentHTML}
+                ${$(this).html()}
+                ${afterExampleParentHTML}` );
+    }
+    )
+
+// Footer //
+
+    $("#footer").html(`
+        ${brPadding}
+        ${$("#footer").html()}
+        ${brPadding}`)
+
 // Example 1 //
 
     $("#btn_hideSimple").click(function () {
@@ -127,7 +163,7 @@ $(document).ready(function () {
     };
 
     $(".classJQuerySimple").click(function () {
-        alert("Hola " + person.name + " tienes " + person.age + " años de edad");
+        alert(`Hola ${person.name} tienes ${person.age} años de edad`);
     });
 
 // Example 12 //
@@ -149,7 +185,7 @@ $(document).ready(function () {
     });
 
     $("#classJQueryAddClass").mouseleave(function () {
-        $("#classJQueryAddClass").addClass("inselected");
+        $("#classJQueryAddClass").addClass("deselected");
     });
 
 // Example 14 //
@@ -189,7 +225,7 @@ $(document).ready(function () {
 
     $("#id28").click(function () {
         var conversor = $("#id27").val();
-        $("#id29").text(conversor + " soles es igual a " + (conversor * 3.56) + " dolares");
+        $("#id29").text(`${conversor} soles es igual a  ${(conversor * 3.56)} dolares`);
         $("#id27").val("");
     });
 
@@ -214,8 +250,8 @@ $(document).ready(function () {
 
     $("#id35").mouseenter(function () {
         var dt2 = "";
-        dt2 += "Ancho: " + $("#caja").width() + "px , Alto: ";
-        dt2 += $("#caja").height() + "px";
+        dt2 += "Ancho: " + $("#box").width() + "px , Alto: ";
+        dt2 += $("#box").height() + "px";
         $("#detalles").html(dt2);
     });
 
@@ -226,7 +262,7 @@ $(document).ready(function () {
 // Example 23 //
 
     $("#id38").click(function () {
-        var dt3 = "El valor del atributo es: " + $("#id36").attr("value"); //attr("id"); //attr("type");
+        var dt3 = `El valor del atributo es: ${ $("#id36").attr("value") }`;
         $("#id37").html(dt3);
         $("#id36").attr("id", "nuevoId");
 
@@ -235,16 +271,17 @@ $(document).ready(function () {
 // Example 24 //
 
     $("#id43").click(function () {
-        $("#id39").addClass("cls3");
+        $("#id39").addClass("txtBlack-bgLime");
         $("#id40").addClass("cls4");
         $("#id41").addClass("cls5");
-        $("#id42").addClass("cls6");
+        $("#id42").addClass("txtGray-bgBrown");
     });
 
 // Example 25 //
 
     $("#id46").click(function () {
-        $("#id44").removeClass("cls6");
+        $("#id44").removeClass("txtGray-bgBrown");
         $("#id45").removeAttr("id");
     });
+
 });
