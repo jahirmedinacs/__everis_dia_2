@@ -223,10 +223,10 @@ $(document).ready(function () {
 
 // Example 19 //
 
-    $("#txtField_moneyExchange").click(function () {
-        var conversor = $("#id27").val();
+    $("#btn_moneyExchange").click(function () {
+        var conversor = $("#txtField_moneyExchange").val();
         $("#txt_moneyExchange").text(`${conversor} soles es igual a  ${(conversor * 3.56)} dolares`);
-        $("#id27").val("");
+        $("#txtField_moneyExchange").val("");
     });
 
 // Example 20 //
@@ -260,9 +260,9 @@ $(document).ready(function () {
 // Example 23 //
 
     $("#btn_attrUseExample").click(function () {
-        var dt3 = `El valor del atributo es: ${ $("#txtField_attrUseExample").attr("value") }`;
-        $("#dom_attrUseExample").html(dt3);
-        $("#txtField_attrUseExample").attr("id", "nuevoId");
+        let responseString = `El valor del atributo es: ${ $("#txtField_attrUseExample").attr("value") }`;
+        $("#dom_attrUseExample").html(responseString);
+        $("#txtField_attrUseExample").attr("id", "nuevoId");1
 
     });
 
