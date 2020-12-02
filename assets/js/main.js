@@ -88,33 +88,33 @@ $(document).ready(function () {
 
 // Example 6 //
 
-    $("#inputText_keyPressTextReference").keypress(function () {
+    $("#txtField_keyPressTxtRef").keypress(function () {
         $("#dom_keyPressUpdateTextColor").css("background-color", "steelblue");
-        console.log(" " + $("#inputText_keyPressTextReference").val());
-        if ($("#inputText_keyPressTextReference").val() == "") {
+        console.log(" " + $("#txtField_keyPressTxtRef").val());
+        if ($("#txtField_keyPressTxtRef").val() == "") {
             $("#dom_keyPressUpdateTextColor").css("background-color", "#088A68");
         }
     });
 
-    $("#keyDownTextReference").keydown(function () {
+    $("#txtField_keyDownTxtRef").keydown(function () {
         $("#keyDownUpdateTextColor").css("color", "red");
-        console.log(" " + $("#keyDownTextReference").val());
-        if ($("#keyDownTextReference").val() == "") {
+        console.log(" " + $("#txtField_keyDownTxtRef").val());
+        if ($("#txtField_keyDownTxtRef").val() == "") {
             $("#keyDownUpdateTextColor").css("color", "#EDEFEE");
         }
     });
 
-    $("#keyUpTextReference").keyup(function () {
+    $("#txtField_keyUpTxtRef").keyup(function () {
         $("#keyUpUpdateTextBgColor").css("background-color", "red");
-        console.log(" " + $("#keyUpTextReference").val());
-        if ($("#keyUpTextReference").val() == "") {
+        console.log(" " + $("#txtField_keyUpTxtRef").val());
+        if ($("#txtField_keyUpTxtRef").val() == "") {
             $("#keyUpUpdateTextBgColor").css("background-color", "#088A68");
         }
     });
 
 // Example 7 //
 
-    $("#multipleEvents").on({
+    $("#txt_multipleEvents").on({
         mouseenter: function () {
             $(this).css("background-color", "lime");
         },
@@ -128,11 +128,11 @@ $(document).ready(function () {
 
 // Example 8 //
 
-    $("#clickAndDoubleClick").on("dblclick", function () {
-        $("#clickAndDoubleClick").css("background-color", "black");
+    $("#txt_clickAndDoubleClick").on("dblclick", function () {
+        $("#txt_clickAndDoubleClick").css("background-color", "black");
     });
-    $("#clickAndDoubleClick").on("click", function () {
-        $("#clickAndDoubleClick").css("background-color", "#088A68");
+    $("#txt_clickAndDoubleClick").on("click", function () {
+        $("#txt_clickAndDoubleClick").css("background-color", "#088A68");
     });
 
 // Example 9 //
@@ -141,7 +141,7 @@ $(document).ready(function () {
         return x + y;
     }
 
-    $("#creationOfFunctionsJS").click(function () {
+    $("#btn_creationOfFunctionsJS").click(function () {
         alert(sumOfPairs(4, 3));
     });
 
@@ -151,7 +151,7 @@ $(document).ready(function () {
         alert("Hola usuario");
     }
 
-    $(".cls0").click(function () {
+    $(".btn_creationOfFunctionsJQuery").click(function () {
         $.fn.hello();
     });
 
@@ -162,7 +162,7 @@ $(document).ready(function () {
         age: 34
     };
 
-    $(".classJQuerySimple").click(function () {
+    $(".class_JQueryPOO").click(function () {
         alert(`Hola ${person.name} tienes ${person.age} años de edad`);
     });
 
@@ -172,7 +172,7 @@ $(document).ready(function () {
         alert(this, arguments.size);
     }
 
-    $(".classJQueryCallAndApply").click(function () {
+    $(".class_JQueryCallAndApply").click(function () {
         $.fn.fooBar();
         $.fn.fooBar.call("Foo", [1, 2]);
         $.fn.fooBar.apply("Bar", [1, 2]);
@@ -180,12 +180,12 @@ $(document).ready(function () {
 
 // Example 13 //
 
-    $("#classJQueryAddClass").mouseenter(function () {
-        $("#classJQueryAddClass").addClass("selected");
+    $("#class_JQueryAddClass").mouseenter(function () {
+        $("#class_JQueryAddClass").addClass("selected");
     });
 
-    $("#classJQueryAddClass").mouseleave(function () {
-        $("#classJQueryAddClass").addClass("deselected");
+    $("#class_JQueryAddClass").mouseleave(function () {
+        $("#class_JQueryAddClass").addClass("deselected");
     });
 
 // Example 14 //
