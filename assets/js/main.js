@@ -1,40 +1,40 @@
-$(document).ready(function () {
-
 // Style per exampleParent //
 
-    let brPadding = "<hr>\n<hr>\n<br>\n<br>\n<br>\n";
+let brPadding = "<hr>\n<hr>\n<br>\n<br>\n<br>\n";
 
-    let beforeExampleParentHTML = `
+let beforeExampleParentHTML = `
     <hr>
         <div class="row">
             <div class="col-md-6 offset-md-3 border rounded bg-white">
                 <br>`;
-    let afterExampleParentHTML = `
+let afterExampleParentHTML = `
                 <br>
             <br>
         </div>
     </div>`;
 
-    $(".exampleParents").each(function () {
-            let firstPChild = $(this).children("p:first-child");
+$(".exampleParents").each(function () {
+        let firstPChild = $(this).children("p:first-child");
 
-            firstPChild.addClass("border rounded bg-light m-0")
-            firstPChild.css("text-align", "center")
-            firstPChild.after("<br>\n")
+        firstPChild.addClass("border rounded bg-light m-0")
+        firstPChild.css("text-align", "center")
+        firstPChild.after("<br>\n")
 
-            $(this).html( `
+        $(this).html( `
                 ${beforeExampleParentHTML}
                 ${$(this).html()}
                 ${afterExampleParentHTML}` );
     }
-    )
+)
 
 // Footer //
 
-    $("#footer").html(`
+$("#footer").html(`
         ${brPadding}
         ${$("#footer").html()}
         ${brPadding}`)
+
+$(document).ready(function () {
 
 // Example 1 //
 
@@ -190,98 +190,96 @@ $(document).ready(function () {
 
 // Example 14 //
 
-    $("#id18").click(function () {
-        $("#id19").hide(2000).show(1000);
+    $("#dom_HideDotShow").click(function () {
+        $("#txt_HideDotShow").hide(2000).show(1000);
     });
 
 // Example 15 //
 
-    $("#id22").click(function () {
+    $("#btn_idsManipulationExample15").click(function () {
         $("*").hide(2000).show(1000);
     });
 
 // Example 16 //
 
-    $("#id24").click(function () {
-        var dt0 = $("#id23").val();
-        alert(dt0);
-        $("#id23").val("");
+    $("#btn_idsManipulationExample16").click(function () {
+        var tmpValue = $("#textField_idsManipulation").val();
+        alert(tmpValue);
+        $("#textField_idsManipulation").val("");
     });
 
 // Example 17 //
 
-    $("#id25").click(function () {
+    $("#btn_idsManipulationExample17").click(function () {
         $(this).hide(2000).show(3000);
     });
 
 // Example 18 //
 
-    $("#id26").click(function () {
+    $("#btn_listManipulation").click(function () {
         $("ul li:first-child").hide(3000).show(600);
         $("ul li:last-child").hide(3000).show(600);
     });
 
 // Example 19 //
 
-    $("#id28").click(function () {
+    $("#txtField_moneyExchange").click(function () {
         var conversor = $("#id27").val();
-        $("#id29").text(`${conversor} soles es igual a  ${(conversor * 3.56)} dolares`);
+        $("#txt_moneyExchange").text(`${conversor} soles es igual a  ${(conversor * 3.56)} dolares`);
         $("#id27").val("");
     });
 
 // Example 20 //
 
-    $("#id30").click(function () {
+    $("#btn_evenAndOddsTable").click(function () {
         $("tr:even").css("background-color", "black");
         $("tr:odd").css("background-color", "lime");
     });
 
 // Example 21 //
 
-    $("#id33").click(function () {
-        $("#id31").text("<font color='black'> Siempre desconfia</font>");
+    $("#btn_useOfText").click(function () {
+        $("#txt_useOfText").text("<font color='black'> Siempre desconfia</font>");
     });
 
-    $("#id34").click(function () {
-        $("#id32").html("<font color='black'> La luz siempre brilla más fuerte</font>");
+    $("#btn_useOfHTML").click(function () {
+        $("#txt_useOfHTML").html("<font color='black'> La luz siempre brilla más fuerte</font>");
     });
 
 // Example 22 //
 
-    $("#id35").mouseenter(function () {
-        var dt2 = "";
-        dt2 += "Ancho: " + $("#box").width() + "px , Alto: ";
-        dt2 += $("#box").height() + "px";
-        $("#detalles").html(dt2);
+    $("#txt_showBoxDimensions").mouseenter(function () {
+        var responseString = `Ancho: ${$("#box").width()} px , Alto: ${$("#box").height()} px`
+        $("#txt_boxDetails").html(responseString);
     });
 
-    $("#id35").mouseleave(function () {
-        $("#detalles").html("");
+    $("#txt_showBoxDimensions").mouseleave(function () {
+        $("#txt_boxDetails").html("");
     });
 
 // Example 23 //
 
-    $("#id38").click(function () {
-        var dt3 = `El valor del atributo es: ${ $("#id36").attr("value") }`;
-        $("#id37").html(dt3);
-        $("#id36").attr("id", "nuevoId");
+    $("#btn_attrUseExample").click(function () {
+        var dt3 = `El valor del atributo es: ${ $("#txtField_attrUseExample").attr("value") }`;
+        $("#dom_attrUseExample").html(dt3);
+        $("#txtField_attrUseExample").attr("id", "nuevoId");
 
     });
 
 // Example 24 //
 
-    $("#id43").click(function () {
-        $("#id39").addClass("txtBlack-bgLime");
-        $("#id40").addClass("cls4");
-        $("#id41").addClass("cls5");
-        $("#id42").addClass("txtGray-bgBrown");
+    $("#btn_addClassExample").click(function () {
+        $("#txt_addClassExampleItem1").addClass("txtBlack-bgLime");
+        $("#txt_addClassExampleItem2").addClass("txtLime-bgBlack");
+        $("#txt_addClassExampleItem3").addClass("txtYellow-bgBlack");
+        $("#txt_addClassExampleItem4").addClass("txtGray-bgBrown");
     });
 
 // Example 25 //
 
-    $("#id46").click(function () {
-        $("#id44").removeClass("txtGray-bgBrown");
-        $("#id45").removeAttr("id");
+    $("#btn_removeAttrAndClass").click(function () {
+        $("#txt_removeClass").removeClass("txtGray-bgBrown");
+        $("#txt_removeAttr").removeAttr("class");
     });
 
 });
